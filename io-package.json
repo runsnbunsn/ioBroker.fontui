@@ -1,0 +1,84 @@
+{
+	"common": {
+		"name": "fontui",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Font UI",
+		"titleLang": {
+			"en": "Font UI",
+			"de": "Benutzeroberfläche für Schriftarten",
+			"ru": "Интерфейс шрифта",
+			"pt": "IU da fonte",
+			"nl": "Lettertype UI",
+			"fr": "Interface utilisateur de police",
+			"it": "UI dei caratteri",
+			"es": "Fuente de interfaz de usuario",
+			"pl": "Interfejs czcionki",
+			"zh-cn": "字体UI"
+		},
+		"desc": {
+			"en": "Collection of font icons and buttons",
+			"de": "Sammlung von Schriftartikonen und -knöpfen",
+			"ru": "Коллекция значков шрифтов и кнопок",
+			"pt": "Coleção de ícones de fontes e botões",
+			"nl": "Verzameling van lettertype pictogrammen en knoppen",
+			"fr": "Collection d'icônes de polices et de boutons",
+			"it": "Raccolta di icone di carattere e pulsanti",
+			"es": "Colección de iconos de fuentes y botones",
+			"pl": "Kolekcja ikon czcionek i przycisków",
+			"zh-cn": "字体图标和按钮的集合"
+		},
+		"authors": [
+			"runsnbunsn <runsnbunsn@gmail.com>"
+		],
+		"keywords": [
+			"font",
+			"ui",
+			"fontawesome"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "fontui.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/runsnbunsn/ioBroker.fontui/master/admin/fontui.png",
+		"readme": "https://github.com/runsnbunsn/ioBroker.fontui/blob/master/README.md",
+		"loglevel": "info",
+		"restartAdapters": [
+			"vis"
+		],
+		"localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+		"mode": "daemon",
+		"type": "visualization",
+		"compact": true,
+		"materialize": true,
+		"dependencies": [
+			{
+				"admin": ">=3.0.0"
+			},
+			{
+				"js-controller": ">=1.4.2"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
