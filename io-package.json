@@ -5,33 +5,17 @@
 		"news": {
 			"0.0.1": {
 				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie",
-				"zh-cn": "首次出版"
+				"de": "Erstveröffentlichung"
 			}
 		},
 		"title": "Font UI",
 		"titleLang": {
 			"en": "Font UI",
-			"de": "Benutzeroberfläche für Schriftarten",
-			"ru": "Интерфейс шрифта",
-			"pt": "IU da fonte",
-			"nl": "Lettertype UI",
-			"fr": "Interface utilisateur de police",
-			"it": "UI dei caratteri",
-			"es": "Fuente de interfaz de usuario",
-			"pl": "Interfejs czcionki",
-			"zh-cn": "字体UI"
+			"de": "Font UI"
 		},
 		"desc": {
 			"en": "Collection of font icons and buttons",
-			"de": "Sammlung von Schriftartikonen und -knöpfen",
+			"de": "Sammlung von Font Icons und -Buttons",
 			"ru": "Коллекция значков шрифтов и кнопок",
 			"pt": "Coleção de ícones de fontes e botões",
 			"nl": "Verzameling van lettertype pictogrammen en knoppen",
@@ -42,7 +26,7 @@
 			"zh-cn": "字体图标和按钮的集合"
 		},
 		"authors": [
-			"runsnbunsn <runsnbunsn@gmail.com>"
+			"Felix Mayerhofer <runsnbunsn@gmail.com>"
 		],
 		"keywords": [
 			"font",
@@ -61,7 +45,7 @@
 			"vis"
 		],
 		"localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
-		"mode": "daemon",
+		"mode": "none",
 		"type": "visualization",
 		"compact": true,
 		"materialize": true,
@@ -76,8 +60,6 @@
 		]
 	},
 	"native": {
-		"option1": true,
-		"option2": "42"
 	},
 	"objects": [],
 	"instanceObjects": []

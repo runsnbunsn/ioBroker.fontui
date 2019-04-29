@@ -15,7 +15,9 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/runsnbu
 
 ## fontui adapter for ioBroker
 
-Collection of font icons and buttons
+#### Widget collection using Font Awesome Icons
+
+The icons(900+) are easy to use and integrate in existing ioBroker VIS designs.
 
 ## Changelog
 
@@ -25,7 +27,7 @@ Collection of font icons and buttons
 ## License
 MIT License
 
-Copyright (c) 2019 runsnbunsn
+Copyright (c) 2019 Felix Mayerhofer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
