@@ -15,11 +15,18 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/runsnbu
 
 ## fontUI adapter for ioBroker
 
-#### Widget collection using Font Awesome Icons
 
-The icons(900+) are easy to use and integrate in existing ioBroker VIS designs.
+#### Widget collection using Font Awesome Icons
+![Example](img/icon_example.png)
+
+The icons(1500+) are easy to use and integrate in existing ioBroker VIS designs.
+Searchable icon list: https://fontawesome.com/icons?d=gallery&m=free
 
 ## Changelog
+
+### 0.0.3
+
+* (runsnbunsn) Fix ALL icons getting cutted on the top
 
 ### 0.0.2
 * (runsnbunsn) Add options to rotate or spin the icons

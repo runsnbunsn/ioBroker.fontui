@@ -1,7 +1,7 @@
 <!--
 	ioBroker.vis fontui Widget-Set
 
-	version: "0.0.2"
+	version: "0.0.3"
 
 	Copyright 2019 runsnbunsn runsnbunsn@gmail.com
 -->
@@ -23,7 +23,7 @@
 		data-vis-update-style="true"
 		data-vis-name="Icon Only">
 	<div class="vis-widget <%== this.data.attr('class') %>" style="width:50px; height:50px; text-align: center;" id="<%= this.data.attr('wid') %>" >
-		<div class="fontui-class vis-widget-body <%== this.data.attr('class') %>" style="padding:2px" >
+		<div class="fontui-class vis-widget-body <%== this.data.attr('class') %>" style="padding-top:10px" >
 			<i class="<%== this.data.attr('fontStyle')%> fa-<%== this.data.attr('fontIcon')%> fa-<%== this.data.attr('rotateIcon')%> fa-<%== this.data.attr('relativeSize')%>" style="color: <%== this.data.attr('myColor') %>;"></i>
 		</div>
 	</div>
