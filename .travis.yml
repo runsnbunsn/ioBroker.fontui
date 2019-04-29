@@ -5,7 +5,6 @@ os:
 
 language: node_js
 node_js:
-  - '6'
   - '8'
   - '10'
 
@@ -27,5 +26,4 @@ before_script:
   - npm -v
 script:
   - npm run test:package
-  - npm run test:unit
   - npm run test:integration
