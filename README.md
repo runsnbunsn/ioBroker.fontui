@@ -21,6 +21,10 @@ The icons(900+) are easy to use and integrate in existing ioBroker VIS designs.
 
 ## Changelog
 
+### 0.0.2
+* (runsnbunsn) Add options to rotate or spin the icons
+* (runsnbunsn) Fix some icons getting cutted on the top
+
 ### 0.0.1
 * (runsnbunsn) initial release
 
