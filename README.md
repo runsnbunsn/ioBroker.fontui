@@ -1,6 +1,6 @@
 <h1>
 	<img src="admin/fontui.png" width="64"/>
-	ioBroker.fontui
+	ioBroker.fontUI
 </h1>
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.fontui.svg)](https://www.npmjs.com/package/iobroker.fontui)
@@ -13,7 +13,7 @@
 **Tests:** Linux/Mac: [![Travis-CI](http://img.shields.io/travis/runsnbunsn/ioBroker.fontui/master.svg)](https://travis-ci.org/runsnbunsn/ioBroker.fontui)
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/runsnbunsn/ioBroker.fontui?branch=master&svg=true)](https://ci.appveyor.com/project/runsnbunsn/ioBroker-fontui/)
 
-## fontui adapter for ioBroker
+## fontUI adapter for ioBroker
 
 #### Widget collection using Font Awesome Icons
 
