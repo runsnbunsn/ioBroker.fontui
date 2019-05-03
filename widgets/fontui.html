@@ -16,7 +16,11 @@
 		$.extend(systemDictionary, {
 			"fab"	: { "en": "Brand icons",	"de":	"Marken Icons"},
 			"fas"	: { "en": "Solid icons",	"de":	"Solide Icons"},
-			"fontStyle"	: { "en": "Icon selection",	"de":	"Icon Auswahl"}
+			"fontStyle"	: { "en": "Icon selection",	"de":	"Icon Auswahl"},
+			"fontIcon"	: { "en": "Icon",	"de":	"Icon"},
+			"rotateIcon"	: { "en": "Rotation",	"de":	"Drehung"},
+			"relativeSize"	: { "en": "Size",	"de":	"Grösse"},
+			"group_animations"	: { "en": "Animations and effects",	"de":	"Animationen und Effekte"}
 
 		});
 
@@ -29,8 +33,8 @@
 		class="vis-tpl"
 		data-vis-prev='<div id="prev_tplMysetIconOnly" style="position: relative; text-align: initial;padding-top: 10px "><div class="vis-widget_prev " style="width: 200px; height: 50px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px;text-align: center;"><i class="fa fa-home fa-2x"></i></div>'
 		data-vis-attrs="fontIcon[home]/input,home
-		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;fontStyle[fas]/select,fas,fab;myColor[#FFF]/color;"
-		data-vis-attrs0="rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
+		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;fontStyle[fas]/select,fas,fab;iconColor[#FFF]/color;"
+		data-vis-attrs0="group.animations;rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
 		data-vis-attrs1="auto/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
 		data-vis-type="icon"
@@ -48,8 +52,8 @@
 		data-vis-prev='<div id="prev_tplMysetIconWithContent" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 200px; height: 50px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px;text-align: center;"><i class="fa fa-home fa-2x"></i></div>'
 		data-vis-attrs="iconPrefixHTML/text;fontIcon[home]/input,home
 		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;
-		fontStyle[fas]/select,fas,fab;myColor[#FFF]/color;oid/id;prefixHTML/text;suffixHTML/text;"
-		data-vis-attrs0="rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
+		fontStyle[fas]/select,fas,fab;iconColor[#FFF]/color;oid/id;prefixHTML/text;suffixHTML/text;"
+		data-vis-attrs0="group.animations;rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
 		data-vis-attrs1="testui/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
 		data-vis-type="icon,val"
@@ -58,7 +62,7 @@
 	<div class="vis-widget <%== this.data.attr('class') %>" style="width:50px; height:50px; text-align: center;" id="<%= this.data.attr('wid') %>" >
 		<div class="fontui-class vis-widget-body <%== this.data.attr('class') %>" style="padding-top:10px" >
 			<%== this.data.attr('iconPrefixHTML')%>
-			<i class="<%== this.data.attr('fontStyle')%> fa-<%== this.data.attr('fontIcon')%> fa-<%== this.data.attr('rotateIcon')%> fa-<%== this.data.attr('relativeSize')%>" style="color: <%== this.data.attr('myColor') %>;"></i>
+			<i class="<%== this.data.attr('fontStyle')%> fa-<%== this.data.attr('fontIcon')%> fa-<%== this.data.attr('rotateIcon')%> fa-<%== this.data.attr('relativeSize')%>" style="color: <%== this.data.attr('iconColor') %>;"></i>
 			<%== this.data.attr('prefixHTML')%>
 			<%== vis.states[this.data.attr('oid') + '.val'] %>
 			<%== this.data.attr('suffixHTML')%>

@@ -69,7 +69,7 @@ vis.binds["fontui"] = {
 		}
 
 		var text = "<div class=\"fontui-widget vis-widget-body\" style=\"padding-top:10px\">";
-		text += "<i class=\"" + data.fontStyle + " fa-" + data.fontIcon + " fa-" + data.rotateIcon + " fa-" +  data.relativeSize + "\" style=\"color: " +  data.myColor + ";\"></i>";
+		text += "<i class=\"" + data.fontStyle + " fa-" + data.fontIcon + " fa-" + data.rotateIcon + " fa-" +  data.relativeSize + "\" style=\"color: " +  data.iconColor + ";\"></i>";
 		text += "</div>";
 
 		$("#" + widgetID).html(text);
