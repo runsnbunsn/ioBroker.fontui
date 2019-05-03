@@ -1,0 +1,47 @@
+@-webkit-keyframes fontui-pulse-green {
+    from { text-shadow: 0 0px 5px #217c1c; }
+    50% { text-shadow: 0 0px 15px #29ca24; }
+    to { text-shadow: 0 0px 5px #217c1c; }
+}
+
+@-webkit-keyframes fontui-pulse-all-green {
+    from { text-shadow: 0 0px 5px #217c1c;color: #217c1c; }
+    50% { text-shadow: 0 0px 15px #29ca24;color: #29ca24; }
+    to { text-shadow: 0 0px 5px #217c1c;color: #217c1c; }
+}
+
+@-webkit-keyframes fontui-pulse-yellow {
+    from { text-shadow: 0 0px 5px #a8a40d; }
+    50% { text-shadow: 0 0px 15px #f9f512; }
+    to { text-shadow: 0 0px 5px #a8a40d; }
+}
+
+@-webkit-keyframes fontui-pulse-all-yellow {
+    from { text-shadow: 0 0px 5px #a8a40d;color: #a8a40d;}
+    50% { text-shadow: 0 0px 15px #f9f512;color: #f9f512; }
+    to { text-shadow: 0 0px 5px #a8a40d;color: #a8a40d; }
+}
+
+@-webkit-keyframes fontui-pulse-red {
+    from { text-shadow: 0 0px 5px #A32125; }
+    50% { text-shadow: 0 0px 15px #FF0009; }
+    to { text-shadow: 0 0px 5px #A32125; }
+}
+
+@-webkit-keyframes fontui-pulse-all-red {
+    from { text-shadow: 0 0px 5px #A32125;color: #A32125; }
+    50% { text-shadow: 0 0px 15px #FF0009;color: #FF0009; }
+    to { text-shadow: 0 0px 5px #A32125;color: #A32125; }
+}
+
+@-webkit-keyframes fontui-pulse-blue {
+    from { text-shadow: 0 0px 5px #0017b0; }
+    50% { text-shadow: 0 0px 15px #0040ff; }
+    to { text-shadow: 0 0px 5px #0017b0; }
+}
+
+@-webkit-keyframes fontui-pulse-all-blue {
+    from { text-shadow: 0 0px 5px #0017b0;color: #0017b0; }
+    50% { text-shadow: 0 0px 15px #0040ff;color: #0040ff; }
+    to { text-shadow: 0 0px 5px #0017b0;color: #0017b0; }
+}

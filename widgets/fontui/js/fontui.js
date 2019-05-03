@@ -67,9 +67,31 @@ vis.binds["fontui"] = {
 				vis.binds["fontui"].createWidget(widgetID, view, data, style);
 			}, 100);
 		}
+		var animationSettings = "";
+		if(data.animationName != "none") {
+			animationSettings += " animation-name: " + data.animationName;
+		}
+		animationSettings +=	"; animation-duration: " + data.animationDuration + "s;";
+		animationSettings += "animation-iteration-count: infinite;"
 
 		var text = "<div class=\"fontui-widget vis-widget-body\" style=\"padding-top:10px\">";
-		text += "<i class=\"" + data.fontStyle + " fa-" + data.fontIcon + " fa-" + data.rotateIcon + " fa-" +  data.relativeSize + "\" style=\"color: " +  data.iconColor + ";\"></i>";
+		if(typeof data.iconPrefixHTML !== 'undefined')
+		{
+			text += data.iconPrefixHTML;
+		}
+		text += "<i class=\"" + data.fontStyle + " fa-" + data.fontIcon + " fa-" + data.rotateIcon + " fa-" +  data.relativeSize + " \" style=\""  + animationSettings + " color: " +  data.iconColor + ";\"></i>";
+		if(typeof data.prefixHTML !== 'undefined')
+		{
+			text += data.prefixHTML;
+		}
+		if(typeof data.oid !== 'undefined')
+		{
+			text += vis.states.attr(data.oid + '.val');
+		}
+		if(typeof data.suffixHTML !== 'undefined')
+		{
+			text += data.suffixHTML;
+		}
 		text += "</div>";
 
 		$("#" + widgetID).html(text);

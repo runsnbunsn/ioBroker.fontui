@@ -6,6 +6,7 @@
 	Copyright 2019 runsnbunsn runsnbunsn@gmail.com
 -->
 <link rel="stylesheet" href="widgets/fontui/css/facss/all.min.css" />
+<link rel="stylesheet" href="widgets/fontui/css/animations.css" />
 <link rel="stylesheet" href="widgets/fontui/css/style.css" />
 
 <script type="text/javascript" src="widgets/fontui/js/fontui.js"></script>
@@ -19,8 +20,19 @@
 			"fontStyle"	: { "en": "Icon selection",	"de":	"Icon Auswahl"},
 			"fontIcon"	: { "en": "Icon",	"de":	"Icon"},
 			"rotateIcon"	: { "en": "Rotation",	"de":	"Drehung"},
+			"iconColor"	: { "en": "Icon color",	"de":	"Icon Farbe"},
+			"glowIcon"	: { "en": "Icon glow",	"de":	"Glühen"},
 			"relativeSize"	: { "en": "Size",	"de":	"Grösse"},
-			"group_animations"	: { "en": "Animations and effects",	"de":	"Animationen und Effekte"}
+			"animationName"	: { "en": "Type of animation",	"de":	"Animationstyp"},
+			"group_animations"	: { "en": "Animations and effects",	"de":	"Animationen und Effekte"},
+			"fontui-pulse-red"	: { "en": "Red pulse",	"de":	"Rot Pulsierend"},
+			"fontui-pulse-all-red"	: { "en": "Red pulse(whole icon)",	"de":	"Rot Pulsierend(ganzes Icon)"},
+			"fontui-pulse-green"	: { "en": "Green pulse",	"de":	"Grün Pulsierend"},
+			"fontui-pulse-all-green"	: { "en": "Green pulse(whole icon)",	"de":	"Grün Pulsierend(ganzes Icon)"},
+			"fontui-pulse-yellow"	: { "en": "Yellow pulse",	"de":	"Gelb Pulsierend"},
+			"fontui-pulse-all-yellow"	: { "en": "Yellow pulse(whole icon)",	"de":	"Gelb Pulsierend(ganzes Icon)"},
+			"fontui-pulse-blue"	: { "en": "Blue pulse",	"de":	"Blau Pulsierend"},
+			"fontui-pulse-all-blue"	: { "en": "Blue pulse(whole icon)",	"de":	"Blau Pulsierend(ganzes Icon)"}
 
 		});
 
@@ -35,7 +47,9 @@
 		data-vis-attrs="fontIcon[home]/input,home
 		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;fontStyle[fas]/select,fas,fab;iconColor[#FFF]/color;"
 		data-vis-attrs0="group.animations;rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
-		data-vis-attrs1="auto/custom,fontui.initSelect,fontIcon;"
+		data-vis-attrs1="animationName[none]/select,none,fontui-pulse-green,fontui-pulse-all-green,fontui-pulse-yellow,fontui-pulse-all-yellow,fontui-pulse-red,fontui-pulse-all-red,fontui-pulse-blue,fontui-pulse-all-blue;"
+		data-vis-attrs2="animationDuration[2.5]/slider,0.5,6,0.5;"
+		data-vis-attrs3="auto/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
 		data-vis-type="icon"
 		data-vis-update-style="true"
@@ -54,18 +68,16 @@
 		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;
 		fontStyle[fas]/select,fas,fab;iconColor[#FFF]/color;oid/id;prefixHTML/text;suffixHTML/text;"
 		data-vis-attrs0="group.animations;rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
-		data-vis-attrs1="testui/custom,fontui.initSelect,fontIcon;"
+		data-vis-attrs1="animationName[none]/select,none,fontui-pulse-green,fontui-pulse-all-green,fontui-pulse-yellow,fontui-pulse-all-yellow,fontui-pulse-red,fontui-pulse-all-red,fontui-pulse-blue,fontui-pulse-all-blue;"
+		data-vis-attrs2="animationDuration[2.5]/slider,0.5,6,0.5;"
+		data-vis-attrs3="auto/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
 		data-vis-type="icon,val"
 		data-vis-update-style="true"
 		data-vis-name="Icon with content">
 	<div class="vis-widget <%== this.data.attr('class') %>" style="width:50px; height:50px; text-align: center;" id="<%= this.data.attr('wid') %>" >
 		<div class="fontui-class vis-widget-body <%== this.data.attr('class') %>" style="padding-top:10px" >
-			<%== this.data.attr('iconPrefixHTML')%>
-			<i class="<%== this.data.attr('fontStyle')%> fa-<%== this.data.attr('fontIcon')%> fa-<%== this.data.attr('rotateIcon')%> fa-<%== this.data.attr('relativeSize')%>" style="color: <%== this.data.attr('iconColor') %>;"></i>
-			<%== this.data.attr('prefixHTML')%>
-			<%== vis.states[this.data.attr('oid') + '.val'] %>
-			<%== this.data.attr('suffixHTML')%>
+			<%	vis.binds.fontui.createWidget(this.data.wid, this.view, this.data, this.style); %>
 		</div>
 	</div>
 </script>
