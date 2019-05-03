@@ -34,6 +34,10 @@ vis.binds["fontui"] = {
 				delay: 400,
 				classes: {
 					"ui-autocomplete": "highlight"
+				},
+				select: function (event, ui) {
+					$(this).val(ui.item.value);
+					$(this).trigger('change', ui.item.value);
 				}
 
 			};
@@ -41,12 +45,13 @@ vis.binds["fontui"] = {
 				if ($(this).autocomplete("widget").is(":visible")) {
 					return;
 				}
-				$(this).data("autocomplete").search($(this).val());
+				$(this).autocomplete("search");
 			});
+
 			target.autocomplete("instance")._renderItem = function(ul, item) {
 				return $( "<li>" )
 					.attr( "data-value", item.value )
-					.append($("<i>").addClass("fas fab fa-" + item.value))
+					.append($("<i>").addClass("fas fa-" + item.value))
 					.append( " " + item.value )
 					.appendTo( ul );
             } ;

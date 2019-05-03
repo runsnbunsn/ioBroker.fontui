@@ -10,12 +10,26 @@
 
 <script type="text/javascript" src="widgets/fontui/js/fontui.js"></script>
 
+<script language="javascript">
+	"use strict";
+	if (vis.editMode) {
+		$.extend(systemDictionary, {
+			"fab"	: { "en": "Brand icons",	"de":	"Marken Icons"},
+			"fas"	: { "en": "Solid icons",	"de":	"Solide Icons"},
+			"fontStyle"	: { "en": "Icon selection",	"de":	"Icon Auswahl"}
+
+		});
+
+	}
+
+</script>
+
 <script id="tplFontuiIconOnly"
 		type="text/ejs"
 		class="vis-tpl"
 		data-vis-prev='<div id="prev_tplMysetIconOnly" style="position: relative; text-align: initial;padding-top: 10px "><div class="vis-widget_prev " style="width: 200px; height: 50px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px;text-align: center;"><i class="fa fa-home fa-2x"></i></div>'
 		data-vis-attrs="fontIcon[home]/input,home
-		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;fontStyle[fas]/nselect,fas,fab;myColor[#FFF]/color;"
+		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;fontStyle[fas]/select,fas,fab;myColor[#FFF]/color;"
 		data-vis-attrs0="rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
 		data-vis-attrs1="auto/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
@@ -34,7 +48,7 @@
 		data-vis-prev='<div id="prev_tplMysetIconWithContent" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 200px; height: 50px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px;text-align: center;"><i class="fa fa-home fa-2x"></i></div>'
 		data-vis-attrs="iconPrefixHTML/text;fontIcon[home]/input,home
 		;relativeSize[lg]/nselect,xs,sm,lg,2x,3x,4x,5x,6x,7x,8x,9x,10x;
-		fontStyle[fas]/nselect,fas,fab;myColor[#FFF]/color;oid/id;prefixHTML/text;suffixHTML/text;"
+		fontStyle[fas]/select,fas,fab;myColor[#FFF]/color;oid/id;prefixHTML/text;suffixHTML/text;"
 		data-vis-attrs0="rotateIcon[none]/nselect,none,spin,pulse,rotate-90,rotate-180,rotate-270,flip-horizontal,flip-vertical,flip-both;"
 		data-vis-attrs1="testui/custom,fontui.initSelect,fontIcon;"
 		data-vis-set="fontui"
