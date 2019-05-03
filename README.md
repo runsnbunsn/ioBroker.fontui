@@ -22,6 +22,18 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/runsnbu
 The icons(1500+) are easy to use and integrate in existing ioBroker VIS designs.
 Searchable icon list: https://fontawesome.com/icons?d=gallery&m=free
 
+## Functions
+
+* Include icons with or without state in your existing designs with easy-to-use searchable icon list
+* Apply animations like glowing or spinning to the icons
+* Change size, color, rotation or animation speed
+* (planned) additional animations
+* (planned) icon touch buttons
+
+To create visualisations like "when state > 100 icon should glow red" just place two(or more) icons in top of each other
+and use the already build-in visibility options from ioBroker VIS. Invisible icon animations don't waste Browser resources.
+
+Should work in most modern browsers like Chrome or Firefox(tested), go easy on the size of the icons when applying lots of animations, they can get very CPU intensive.
 ## Changelog
 
 ### 0.0.3
