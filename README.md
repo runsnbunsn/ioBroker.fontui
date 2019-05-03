@@ -36,6 +36,12 @@ and use the already build-in visibility options from ioBroker VIS. Invisible ico
 Should work in most modern browsers like Chrome or Firefox(tested), go easy on the size of the icons when applying lots of animations, they can get very CPU intensive.
 ## Changelog
 
+### 0.1.0
+* (runsnbunsn) add searchable autocomplete list of icons with preview
+* (runsnbunsn) add more animation options and settings
+* (runsnbunsn) add translations
+
+
 ### 0.0.3
 
 * (runsnbunsn) Fix ALL icons getting cutted on the top

@@ -1,7 +1,7 @@
 /*
 	ioBroker.vis fontui Widget-Set
 
-	version: "0.0.1"
+	version: "0.1.0"
 
 	Copyright 2019 runsnbunsn runsnbunsn@gmail.com
 */
@@ -16,7 +16,7 @@
 
 
 vis.binds["fontui"] = {
-	version: "0.0.3",
+	version: "0.1.0",
 	showVersion: function () {
 		if (vis.binds["fontui"].version) {
 			console.log("Version fontui: " + vis.binds["fontui"].version);
