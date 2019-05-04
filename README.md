@@ -30,10 +30,23 @@ Searchable icon list: https://fontawesome.com/icons?d=gallery&m=free
 * (planned) additional animations
 * (planned) icon touch buttons
 
-To create visualisations like "when state > 100 icon should glow red" just place two(or more) icons in top of each other
+####Displaying/hiding icons when a state changes
+
+To create visualisations like "if state > 100 icon should glow red" just place two(or more) icons in top of each other
 and use the already build-in visibility options from ioBroker VIS. Invisible icon animations don't waste Browser resources.
 
-Should work in most modern browsers like Chrome or Firefox(tested), go easy on the size of the icons when applying lots of animations, they can get very CPU intensive.
+####Using the icon font in other widgets
+You can use the icons in any widget that allows HTML content. To display an icon within another widget just enter
+ 
+ `<i class="fas fa-home fa-2x"></i>`
+ 
+`home` is the icon name and `2x` is the relative size.
+
+This should work with most widgets(I tested a few), but there may be some widgets where the icon doesnt display correctly.
+
+####Compatibility
+
+FontUI Should work in most modern browsers like Chrome or Firefox(tested), go easy on the size of the icons when applying lots of animations, they can get very CPU intensive very fast.
 ## Changelog
 
 ### 0.1.0
