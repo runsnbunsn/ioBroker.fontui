@@ -49,6 +49,9 @@ This should work with most widgets(I tested a few), but there may be some widget
 FontUI Should work in most modern browsers like Chrome or Firefox(tested), go easy on the size of the icons when applying lots of animations, they can get very CPU intensive very fast.
 ### Changelog
 
+### 0.1.1
+* (runsnbunsn) update Font-Awesome to 5.10, adding about 300 new or changed icons
+
 ### 0.1.0
 * (runsnbunsn) add searchable autocomplete list of icons with preview
 * (runsnbunsn) add more animation options and settings
