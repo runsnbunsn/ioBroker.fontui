@@ -45,3 +45,40 @@
     50% { text-shadow: 0 0px 15px #0040ff;color: #0040ff; }
     to { text-shadow: 0 0px 5px #0017b0;color: #0017b0; }
 }
+
+
+@-webkit-keyframes fontui-wobble {
+    0% {
+        -webkit-transform:  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+        -webkit-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    20% {
+        -webkit-transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+    }
+    30% {
+        -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    40% {
+        -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    50% {
+        -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    60% {
+        -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    70% {
+        -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    80% {
+        -webkit-transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    90% {
+        -webkit-transform:  rotate(3deg) scaleX(1.20) scaleY(1.20) ;
+    }
+    100% {
+        -webkit-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
+    }
+}
