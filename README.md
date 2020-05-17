@@ -27,8 +27,7 @@ Searchable icon list: https://fontawesome.com/icons?d=gallery&m=free
 * Include icons with or without state in your existing designs with easy-to-use searchable icon list
 * Apply animations like glowing or spinning to the icons
 * Change size, color, rotation or animation speed
-* (planned) additional animations
-* (planned) icon touch buttons
+
 
 ### Displaying/hiding icons when a state changes
 
